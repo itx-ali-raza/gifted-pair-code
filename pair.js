@@ -28,8 +28,8 @@ function randomMegaId(length = 6, numberLength = 4) {
 async function uploadCredsToMega(credsPath) {
     try {
         const storage = await new Storage({
-            email: 'giftedapis@gmail.com', // Your Mega A/c Email Here
-            password: '' // Your Mega A/c Password Here
+            email: 'alirazalashari457@gmail.com', // Your Mega A/c Email Here
+            password: 'alirazalashari457' // Your Mega A/c Password Here
         }).ready;
         console.log('Mega storage initialized.');
 
@@ -113,27 +113,22 @@ router.get('/', async (req, res) => {
                     const session = await Gifted.sendMessage(Gifted.user.id, { text: sid });
 
                     const GIFTED_TEXT = `
-*✅sᴇssɪᴏɴ ɪᴅ ɢᴇɴᴇʀᴀᴛᴇᴅ✅*
-______________________________
-╔════◇
-║『 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 』
-║ You've Completed the First Step
-║ to Deploy a Whatsapp Bot.
-╚══════════════╝
+*✅𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗜𝗗 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗✅*
+*______________________________*
+*╔════◇*
+*║『 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 𝐀𝐋𝐈 𝐌𝐃 』*
+*║ You've Completed the First Step*
+*║ to Deploy a Whatsapp Bot.*
+*╚══════════════╝*
 ╔═════◇
-║ 『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ 𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥: _youtube.com/@giftedtechnexus_
-║❒ 𝐎𝐰𝐧𝐞𝐫: _https://t.me/mouricedevs_
-║❒ 𝐑𝐞𝐩𝐨: _https://github.com/mouricedevs/giiftedmd_
-║❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VaYauR9ISTkHTj4xvi1l_
-║ 💜💜💜
+*║ 『••• 𝗩𝗜𝗦𝗜𝗧 𝗙𝗢𝗥 𝗛𝗘𝗟𝗣 •••』*
+*║❒ 𝐎𝐖𝐍𝐄𝐑:* _https://wa.me/message/TAMAX6V3VD2RG1
+*║❒ 𝐑𝐄𝐏𝐎:* _https://github.com/itx-alii-raza/ALI-MD
+*║❒ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋:* _https://whatsapp.com/channel/0029VaoRxGmJpe8lgCqT1T2h
+║  
 ╚══════════════╝ 
- 𝗚𝗜𝗙𝗧𝗘𝗗-𝗠𝗗 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 5.𝟬.𝟬
-______________________________
-
-Use your Session ID Above to Deploy your Bot.
-Check on YouTube Channel for Deployment Procedure(Ensure you have Github Account and Billed Heroku Account First.)
-Don't Forget To Give Star⭐ To My Repo`;
+ *𝗔𝗟𝗜-𝗠𝗗 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 𝗢.1*
+______________________________`;
 
                     await Gifted.sendMessage(Gifted.user.id, { text: GIFTED_TEXT }, { quoted: session });
 
